@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+
+    <div class="uk-background-muted">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                            </a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">random motivation</a></li>
+                                    <li><a href="#">random Le saviez-vous?</a></li>
+                                    <li><a href="#">random blagues</a></li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="uk-active rm-menu-item">
+                        <a href="#">Randoomi</a>
+                    </li>
+                </ul>
+            </div>
+            
+        
+            <div class="uk-navbar-right">
+        
+                <ul class="uk-navbar-nav">
+                    <li class="rm-menu-item">
+                        <a href="#">add a phrase</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active">
+                                    <form action="javascript:void(0)">
+                                        <input class="uk-input uk-form-width-small" type="text" placeholder="">
+                                        <button class="uk-button uk-button-default">Thanks</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#"><img width="35" src="./public/World-Flags-Globe-logo-symbole-clipart-free-pictures-domain-public-1560x1562.png" alt=""></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">francais</a></li>
+                                <li><a href="#">anglais</a></li>
+                                <li><a href="#">espagnol</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+        </nav>
+    </div>
+    
+    <div 
+        class="uk-background-muted" 
+        uk-height-viewport="offset-top:true; offset-bottom:true"
+    >
+        <div class="uk-position-center"> 
+            <div class="uk-container">            
+                <div class="uk-text-center">
+                    <h1 class="uk-heading-small" id="randomFact"></h1>
+                    <div>
+                        <a href="#" id="getRandomFact" class="uk-icon-link" uk-icon="icon: refresh; ratio:2;"></a>                        
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="uk-container">
+        <p class="uk-text-center uk-padding-small">tout droit reserve</p>
+    </div>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
